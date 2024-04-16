@@ -5,7 +5,8 @@ import Contact from "./pages/Contact";
 import User from "./pages/User";
 import OldBooks from "./pages/OldBooks";
 import NewBooks from "./pages/NewBooks";
-
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           <li>
             <Link to="/books/oldbooks">OLD BOOKS</Link>
           </li>
+          <li>
+            <Link to="/login">LOGIN</Link>
+          </li>
         </ul>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -43,6 +47,8 @@ function App() {
             <Route path="oldbooks" element={<OldBooks />} />
             <Route path="newbooks" element={<NewBooks />} />
           </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
